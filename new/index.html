@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="mainnavbar">
+    <div class="logo">
+        <h1 class="logo-text"> ALI's PIZZA</h1>
+    </div>
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Menu</a>
+    <a href="#" class="nav-link">Contact</a>
+    <a href="#" class="nav-link">Specials</a>
+    <a href="#" class="order-online-button nav-link">Order Online</a>
+</nav>
+
+    <!-- Your website content goes here -->
+
+
+
+        
+
+
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+       
+        <img class="imagemenu" src="Screenshot 2023-12-10 184015.png" style="width:100%">
+      
+      </div>
+      
+      <div class="mySlides fade">
+        <img class="imagemenu" src="Screenshot 2023-12-10 184042.png" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <img class="imagemenu" src="Screenshot 2023-12-10 184159.png" style="width:100%">
+        
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+<div><img class="justadjustment" src="Screenshot 2023-12-12 205705.png" alt=""></div>
+
+        <title>Your Webpage Title</title>
+        <!-- Add any additional styles or scripts here -->
+        <style>
+          body {
+            text-align: center;
+          }
+      
+        </style>
+      
+        <div class="site-header">
+          <h1 style="color: orange; font-family: monospace;">Fresh From Ali</h1>
+          <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: -25px;">OUR SPECIALTIES</h1>
+        </div>
+      
+        <div class="main-content">
+          <div class="content-section">
+            <a href="your_link_1">
+              <img src="Burger-Stock.jpg" alt="Burger Image">
+              <div class="content-text">BURGERS</div>
+            </a>
+          </div>
+          <div class="content-section">
+            <a href="your_link_2">
+              <img src="coffee-4648041_1920-e1697271404997.jpg" alt="Dessert Image">
+              <div class="content-text">DESSERTS</div>
+            </a>
+          </div>
+          <div class="content-section">
+            <a href="your_link_3">
+              <img src="pizza-2589575_1920-e1697271289378.jpg" alt="Pizza Image">
+              <div class="content-text">DOUBLE CHEESE PIZZA</div>
+            </a>
+          </div>
+        </div>
+      
+        <div class="button-container">
+          <a href="your_button_link" class="viewmorebutton">VIEW MORE</a>
+        </div>
+      
+<div><img class="justadjustment" src="black1.png" alt=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="site-header" style="background-color: hsla(0, 0%, 0%, 0.916); margin-top: -30px;">
+  <h1 style="color: orange; font-family: monospace;">Fresh From Ali</h1>
+  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: -25px; color: white;" >OUR SPECIAL MENU</h1>
+</div>
+
+<div class="menu-container">
+  
+
+
+     
+<nav class="main-nav">
+          <a href="#all" class="nav-link first">All</a>
+          <a href="#burgers" class="nav-link">Burgers</a>
+          <a href="#fries-sides" class="nav-link">Fries & Sides</a>
+          <a href="#salads" class="nav-link">Salads</a>
+          <a href="#desserts" class="nav-link">Desserts</a>
+          <a href="#drinks" class="nav-link last">Drinks</a>
+      </nav>
+  
+      
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section>
+          <!-- Food Item 1 -->
+          <div class="food-item meat-salad" >
+            <img src="product-8.png" alt="Meat Salad">
+            <div class="food-details">
+              <div class="food-title">Meat Salad</div>
+              <div class="food-description">A hearty salad featuring grilled meat, fresh greens, and a tangy vinaigrette.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$7.99</div>
+            </div>
+          </div>
+    
+          <!-- Food Item 2 -->
+          <div class="food-item lemon-juice">
+            <img src="drink-2.png" alt="Lemon Juice">
+            <div class="food-details">
+              <div class="food-title">Lemon Juice</div>
+              <div class="food-description">Refreshing lemon juice served over ice.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$3.49</div>
+            </div>
+          </div>
+    
+          <!-- Food Item 3 -->
+          <div class="food-item sallow-burger">
+            <img src="burger-4.png" alt="Sallow Burger">
+            <div class="food-details">
+              <div class="food-title">Sallow Burger</div>
+              <div class="food-description">A unique burger with a sallow twist, served with a special sauce.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$6.99</div>
+            </div>
+          </div>
+    
+          <!-- Food Item 4 -->
+          <div class="food-item green-salad">
+            <img src="salads-1.png" alt="Green Salad">
+            <div class="food-details">
+              <div class="food-title">Green Salad</div>
+              <div class="food-description">A fresh and healthy green salad with a mix of vegetables and herbs.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$5.49</div>
+            </div>
+          </div>
+    
+          <!-- Repeat the above structure for more food items -->
+        </section>
+      </div>
+      <div class="menu-container" style="margin-top: 0px;">
+        <section style="margin-top: -50px;">
+      
+          <!-- Food Item 1 -->
+          <div class="food-item meat-salad" style="background-color: rgb(122, 93, 230);">
+            <img src="salads-2.png" alt="Olive Salad">
+            <div class="food-details">
+              <div class="food-title">Olive Salad</div>
+              <div class="food-description">A delightful salad featuring olives, fresh greens, and a zesty vinaigrette.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$8.99</div>
+            </div>
+          </div>
+      
+          <!-- Food Item 2 -->
+          <div class="food-item lemon-juice" style="background-color: rgb(142, 18, 130);">
+            <img src="drink-1.png" alt="Special Drinks">
+            <div class="food-details">
+              <div class="food-title">Special Drinks</div>
+              <div class="food-description">Exquisite and unique drinks crafted with special ingredients.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$4.99</div>
+            </div>
+          </div>
+      
+          <!-- Food Item 3 -->
+          <div class="food-item sallow-burger" style="background-color: chocolate;">
+            <img src="product-7-1.png" alt="Pasta">
+            <div class="food-details">
+              <div class="food-title">Pasta</div>
+              <div class="food-description">Savor the flavors with our delicious pasta served with a choice of sauce.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$9.99</div>
+            </div>
+          </div>
+      
+          <!-- Food Item 4 -->
+          <div class="food-item green-salad" style="background-color: rgb(160, 95, 95);">
+            <img src="burger-3-1.png" alt="Fresh Burger">
+            <div class="food-details">
+              <div class="food-title">Fresh Burger</div>
+              <div class="food-description">Indulge in our freshly made burger with a perfect blend of flavors.</div>
+              <div class="food-price-heading">Price</div>
+              <div class="food-price-details">$7.49</div>
+            </div>
+          </div>
+      
+          <!-- Repeat the above structure for more food items -->
+      
+        </section>
+      </div>
+      <div><img class="justadjustment" src="vlack2.png" alt=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <title>Online Pizza Order</title>
+     <div class="ordersection">
+      <div id="pizza-info">
+        <div class="site-header">
+          <h2 style="color: orange; font-family: monospace; margin-right: 400px; font-size: 25px;"><b>Fresh From Ali</b></h2>
+          <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: -25px; " >ORDER ONLINE</h1>
+        </div>
+        
+        
+        <p class="pizza-info-text" style="margin-top: -40px;" >Order your favorite pizza online and enjoy the convenience of having it delivered to your doorstep. Explore our menu and choose from a variety of delicious options. Place your order now! We provide fast and reliable delivery services to ensure your pizza arrives fresh and hot. Join our online community and experience the easiest way to satisfy your pizza cravings.</p>
+        <div class="centered-button">
+        </div>
+      </div>
+    
+      <div id="order-form">
+        <h2 style="text-align: center; font-size: 30px;">BOOK A TABLE</h2>
+        <form>
+          <input class="order-input" type="text" placeholder="Name" name="name" required>
+          <input class="order-input" type="date" placeholder="Date" name="date" required>
+          <select class="order-input" name="persons" required>
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+            <!-- Add more options as needed -->
+          </select>
+          <input class="order-input" type="email" placeholder="Email" name="email" required>
+          <div class="centered-button">
+            <button type="submit">PLACE ORDER</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Your website content goes here -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div>
+                  <h2>Ali pizza</h2>
+                    <p>123 Pizza Street<br>Cityville, State 12345</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div>
+                    <h2>Shop Hours</h2>
+                    <p>Mon to Sat: 10am to 3am</p>
+                    <p>Sunday: Closed</p>
+                    <p> lunch available every day</p>
+                </div>
+                <div class="useful-links">
+                    <h2>Useful Links</h2>
+                    <a href="#">Contact</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Privacy</a>
+                    <!-- Add more links as needed -->
+                </div>
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <!-- Add more social media links as needed -->
+                </div>
+                <div class="footer-details">
+                    <h2>Additional Details</h2>
+                    <p>Copyright © 2023 Pizza Shop</p>
+                    <p>Terms and Conditions</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,720 @@
+*{
+    font-family: sans-serif;
+  }
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .mainnavbar{
+        background-color: rgba(0, 0, 0, 0.877);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .logo-text {
+        color: rgb(237, 85, 9);
+        margin: 0;
+        font-size: 24px;
+    }
+    
+    .mainnavbar-link {
+        color: rgb(237, 85, 9);
+        text-decoration: none;
+        padding: 10px 15px;
+        margin: 0 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .mainnavbar-link:hover {
+        background-color: #333;
+    }
+    
+    .order-online-button {
+        background-color: rgb(237, 85, 9);
+        color: black;
+        padding: 10px 15px;
+        margin: 0 20px;
+        border: 2px solid rgb(237, 85, 9);
+        border-radius: 40px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    .order-online-button:hover {
+        background-color: transparent;
+        color: whitesmoke;
+        border: 2px solid rgb(237, 85, 9);
+    }
+    
+    /* Your existing styles */
+    
+    @media screen and (max-width: 768px) {
+      .mainnavbar {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .logo {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    
+        .mainnavbar-link,
+        .order-online-button {
+            margin: 10px 0;
+        }
+    }
+    
+    .justadjustment{
+      width: 100%;
+      margin-top: -40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.imagemenu {
+  vertical-align: middle;
+  height: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+.site-header h1 {
+    color: #1D1D1D;
+    font-size: 50px;
+   }
+      .site-header {
+        padding: 10px;
+        text-align: center;
+        color: black;
+        margin-bottom: 30px;
+        margin-top: 70px;
+      }
+  
+      .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: -30px 40px 30px 30px;
+      }
+  
+      .content-section {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+  
+      .content-section img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .content-section:hover img {
+        transform: scale(1.1);
+      }
+  
+      .content-section a {
+        text-decoration: none;
+        color: inherit;
+      }
+  
+      .content-text {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 19px;
+      }
+      .viewmorebuttun{
+        height: 40px;
+        width: 120px;
+        color: white;
+        font-size: 16px;
+        border-radius: 40%;
+        background-color: orange;
+        border: none;
+
+      }
+  
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        .content-section {
+
+          margin-bottom: 20px;
+        }
+      }
+      
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .content-section {
+        margin: 20px;
+      }
+  
+      .button-container {
+        margin-top: 20px;
+      }
+  
+      .viewmorebutton {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        border-radius: 45px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .main-nav {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0px;
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link:hover:not(.first) {
+        background-color: #f90;
+        color: #fff;
+    }
+
+    .first {
+        background-color: #f90;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .last {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      .main-nav {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .menu-container {
+        background-color: hsla(0, 0%, 0%, 0.916);
+        padding: 20px;
+        margin-top: -30px;
+      }
+  
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+  
+      .food-item {
+        width: calc(17% - 20px);
+       /* Adjusted margin for better spacing */
+        background-color: transparent; /* Transparent white background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        color: white;
+      }
+  
+      .food-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .food-item:hover img {
+        transform: translateY(-5px); /* Move up on hover */
+      }
+  
+      .food-details {
+      /* Added padding for better aesthetics */
+      }
+  
+      .food-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+  
+      .food-description {
+        margin-bottom: 12px;
+        word-wrap: break-word;
+      }
+  
+      .food-price-heading {
+        font-size: 16px;
+        color: #e44d26;
+      }
+  
+      .food-price-details {
+        font-size: 14px;
+      }
+  
+      /* Specific classes for each food item */
+      .meat-salad {
+        background-color: #003366; /* Adjusted background color for Meat Salad */
+      }
+  
+      .lemon-juice {
+        background-color: #990000; /* Adjusted background color for Lemon Juice */
+      }
+  
+      .sallow-burger {
+        background-color: #663300; /* Adjusted background color for Sallow Burger */
+      }
+  
+      .green-salad {
+        background-color: #006600; /* Adjusted background color for Green Salad */
+      }
+ /* Default styles for larger screens */
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.food-item {
+  width: 200px; /* Adjust the width as needed */
+  margin: 40px;
+}
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 300px) {
+  .menu-container {
+    justify-content: center;
+  }
+
+  .food-item {
+    width: 100%; /* Make the items take full width on smaller screens */
+  }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ordersection {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+#pizza-info {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  height: calc(100vh - 40px); /* 100% viewport height minus padding */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-info-text {
+  margin-bottom: 180px;
+}
+
+#order-form {
+  width: 50%;
+  padding: 100px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px); /* 100% viewport height minus padding */
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: #333;
+}
+
+.order-input {
+  width: 100%;
+  padding: 15px; /* Increased height */
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+  /* Your existing styles */
+
+  /* Media query for small screens */
+
+  /* Your existing styles */
+
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 15px; /* Adjust the font size for h1 on small screens */
+      margin-right: 0; /* Adjust the margin as needed */
+    }
+
+    .pizza-info-text {
+      font-size: 12px; /* Adjust the font size for pizza-info-text on small screens */
+      margin-top: -20px; /* Adjust the margin-top as needed */
+    }
+
+    .tabletext h2 {
+      font-size: 15px; /* Adjust the font size for h2 within #order-form on small screens */
+    }
+
+    .site-header h1 {
+      font-size: 20px;
+       /* Adjust the font size for h1 within .site-header on small screens */
+       /* Adjust the margin as needed */
+    }
+  }
+    .site-header h2 {
+      font-size: 13px;
+      margin-bottom: 30px;
+      margin-left: 320px;
+      width: 200px;
+       /* Adjust the font size for h1 within .site-header on small screens */
+       /* Adjust the margin as needed */
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer-section h2{
+color: orange;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+  }
+
+  .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .footer-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+
+  .footer-section div {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+
+  .footer-section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .footer-section h2 {
+      margin-bottom: 10px;
+  }
+
+  .footer-section p {
+      margin: 0;
+      line-height: 1.5;
+  }
+
+  .useful-links a,
+  .social-links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+  }
+
+  .social-links {
+      flex: 1;
+      text-align: center;
+  }
+
+  .footer-details {
+      flex: 1;
+      text-align: center;
+  }
